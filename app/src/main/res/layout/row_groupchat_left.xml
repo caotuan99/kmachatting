@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="100dp"
+    android:orientation="vertical"
+    android:layout_marginRight="100dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_receiver"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/xanhsang"
+        android:textStyle="bold"
+        android:text="Tên"
+        android:layout_marginLeft="5dp" />
+    <TextView
+        android:id="@+id/messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tin nhắn"
+        android:textColor="@color/black" />
+<!--    ImageView: image message-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image"
+        android:id="@+id/messageIv"
+        android:layout_marginLeft="5dp" />
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="Time"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:gravity="end" />
+
+</LinearLayout>

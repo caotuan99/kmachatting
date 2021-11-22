@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CmtActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatLayout"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/facebook4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/uPictureIv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_face_post" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/uNameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/pTimeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 phút trước"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/moreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/facebook4"
+                        android:src="@drawable/ic_more" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pTitleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pDescriptionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:text="Nội dung bài đăng..."
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/pImageIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/facebook4" />
+
+                <TextView
+                    android:id="@+id/pLikeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="12 Lượt thích"
+                    android:textColor="@color/facebook" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F5F0F0" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <LinearLayout
+                        android:id="@+id/likebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:background="@color/facebook3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/commentbtn"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imglike"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/icon_like" />
+
+                        <TextView
+                            android:id="@+id/tvlike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="Thích"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/commentbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:background="@color/facebook3"
+                        app:layout_constraintLeft_toRightOf="@+id/likebtn"
+                        app:layout_constraintRight_toLeftOf="@id/sharebtn"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/icon_cmt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0dp"
+                            android:gravity="center"
+                            android:text="Bình luận"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sharebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        app:background="@color/facebook3"
+                        app:layout_constraintLeft_toRightOf="@id/commentbtn"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_share_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="Chia sẻ"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_cmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+<LinearLayout
+    android:id="@+id/layout_showImg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/chatLayout"
+    android:background="@color/white"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/imgCmt"
+        android:layout_width="129dp"
+        android:layout_height="143dp"
+        android:layout_above="@+id/chatLayout"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_image"
+
+      />
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/facebook4"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--        Image Button to send image-->
+        <ImageButton
+            android:id="@+id/imageCmt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/facebook4"
+            android:src="@drawable/ic_attatch_btn"/>
+
+        <!--        edit text: nhap tin nhan-->
+        <EditText
+            android:id="@+id/edtCmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:hint="Nhập bình luận..."
+            android:padding="15dp"
+            android:inputType="textCapSentences|textMultiLine"
+            />
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/ic_send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

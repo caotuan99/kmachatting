@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chatkma">
+    <!-- Ket noi Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/chat"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/chat"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChatKMA">
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CmtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GroupParticipantAddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:exported="true"
+            android:theme="@style/AppThemeNo" />
+        <activity
+            android:name=".GroupCreateActivity"
+            android:exported="true"
+            android:theme="@style/AppThemeNo" />
+        <activity
+            android:name=".AddPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DangKyActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChatKMA</string>
+    <string name="btn_dangky">Đăng Ký</string>
+    <string name="btn_dangnhap">Đăng Nhập</string>
+    <string name="edit_text_Hoten">Họ và tên</string>
+    <string name="BtnCheckSV">Sinh viên</string>
+    <string name="BtnCheckGv">Giảng viên</string>
+    <string name="editTextMaSv">Mã GV/SV</string>
+    <string name="BtnDangKy">Đăng Ký</string>
+    <string name="TitleActionBarCreateGroup">Tạo nhóm lớp học phần</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

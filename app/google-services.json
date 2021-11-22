@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340055990095",
+    "project_id": "kma-chatting",
+    "storage_bucket": "kma-chatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340055990095:android:34e5927f8a9748c732af3a",
+        "android_client_info": {
+          "package_name": "com.example.chatkma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340055990095-fmbu2n6rqd5mijlpt31gn8v21de2bb7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGHKSquIRnH8kxSRdtUWdaF70oWWPqndY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340055990095-fmbu2n6rqd5mijlpt31gn8v21de2bb7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
